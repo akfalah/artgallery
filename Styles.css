@@ -1,103 +1,160 @@
-@media all and (max-width: 600px) {
-    * {
-        padding: 0px;
-        margin: 0px;
-        font-family: monospace;
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: monospace;
+    box-sizing: border-box;
+}
 
-    }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    width: 100%;
+    height: 13vh;
+    box-sizing: border-box;
+    background-color: #24252a;
+}
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px 10px;
-        width: 100%;
-        height: 12vh;
-        box-sizing: border-box;
-        background-color: #24252a;
-    }
+.ul-navbar {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .ul-navbar {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-    }
+.li-navbar {
+    list-style: none;
+    padding: 5px;
+    margin: 5px;
+}
 
-    .li-navbar {
-        list-style: none;
-        padding: 5px;
-        margin: 5px;
-    }
+.li-navbar a {
+    color: #c5c5c5;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    transition: all .4s ease;
 
-    .li-navbar a {
-        color: #c5c5c5;
-        text-decoration: none;
-        font-size: large;
-        font-weight: bold;
-        transition: all .4s ease;
+}
 
-    }
+.li-navbar a:hover {
+    color: #fde097;
+}
 
-    .li-navbar a:hover, .li-navbar a:active {
-        font-size: larger;
-        color: #24252a;
-        background-color: #c5c5c5;
-        border-radius: 50px;
-        margin: 5px;
-        padding: 10px;
-    }
+.img-navbar {
+    width: 7%;
+    object-fit: contain;
+    padding: 5px;
+    margin: 5px;
+}
 
-    .img-navbar {
-        width: 5%;
-        padding: 5px;
-        margin: 5px;
-    }
+body {
+    background-color: #fde097;
+}
 
-    body {
-        background-color: #fde097;
-    }
+.content {
+    height: 72vh;
+    background-color: #e7c05e;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+}
 
-    .content {
-        height: 68vh;
-        background-color: #e7c05e;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        margin: 20px;
-    }
+.h1-cont {  
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    cursor: default;
+}
 
-    .h1-cont {  
-        border-radius: 50px;
-        padding: 10px;
-        margin: 10px;
-        cursor: default;
-    }
+.h1-cont::selection {
+    background-color: #24252a;
+}
 
-    .h1-cont::selection {
-        background-color: #24252a;
-    }
+.h2-cont {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+    cursor: default;
+}
 
-    .img-cont {
-        width: 30%;
-        object-fit: contain;
-    }
+.h2-cont::selection {
+    background-color: #c5c5c5;
+}
 
-    footer {
-        color: #c5c5c5;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 10vh;
-        width: 100%;
-        background-color: #24252a;
-        box-sizing: border-box;
-    }
+.img-cont {
+    width: 30%;
+    object-fit: contain;
+    align-items: center;
+}
 
-    .img-logo {
-        width: 25%;
-        padding: 10px;
-        margin: 10px;
-    }
+.art-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fde097;
+    width: 400px;
+    height: 550px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.card h1 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card-img {
+    height: 400px;
+    margin-bottom: 10px;
+    background-size: contain;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.img1 {
+    background-image: url(IMG_20230224_105000_287.jpg);
+}
+
+.img2 {
+    background-image: url(IMG_20230222_135356_179.jpg);
+}
+
+.img3 {
+    background-image: url(IMG_20230222_135421_891.jpg);
+}
+
+footer {
+    color: #c5c5c5;
+    height: 10vh;
+    width: 100%;
+    background-color: #242424;
+}
+
+.logo {
+    padding: 20px 0;
+    justify-content: center;
+    text-align: center;
+}
+
+footer .logo a {
+    font-size: 50px;
+    text-decoration: none;
+    color: #c5c5c5;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    margin: 0px 20px;
 }
