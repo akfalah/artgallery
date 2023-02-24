@@ -96,6 +96,7 @@ body {
 .art-cont {
     display: flex;
     justify-content: center;
+    flex-warp: wrap;
 }
 
 .card {
